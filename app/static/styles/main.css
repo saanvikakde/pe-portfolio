@@ -3,7 +3,7 @@ p, h1, h2, h3, h4, h5, h6, button {
 }
 
 body {
-    background-color: #ddd1c4;
+    background-color: #f3e7da;
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
@@ -11,98 +11,75 @@ body {
     margin: 0px;
 }
 
-.nav-bar {
-    width: 100%;
-    display: inline-block;
-    /* background-color: #1C539F; */
-    background-color: rgba(92, 71, 71, 1);
-    font-family: "Roboto", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
-}
-
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo img {
-    width: 200px;
-}
-
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
-}
-
 .menu-bar {
-    width: 100%;
-    background-color: rgba(92, 71, 71, 1);
-    padding: 12px 24px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  width: 100%;
+  background-color: rgb(85, 75, 63);
+  padding: 32px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: flex-start;
-    gap: 24px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 80px; /* more spacing between items */
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    font-family: "Lato";
+  text-decoration: none;
+  color: #f4e9dd; /* light beige/white */
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;       
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  position: relative;
 }
 
-.nav-links a:hover {
-    color: #eacc20;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #f4e9dd;
+  bottom: -8px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
 }
 
 .rectangle {
     position: absolute;
-    left: 80px;
-    top: 138px;
-    width: 1260px;
-    height: 245px;
-    background: #5997668F;
-    border-radius: 14px;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    height: 315px;
+    background: #4a3c32;
+    border-radius: 0px;
   }
 
   .pfp {
     position: absolute;
     left: 1200px;
-    top: 236px;
+    top: 245px;
     width: 268px;
     height: 295px;
     background: url("../img/logo.jpg") no-repeat center center / cover;
-    border-radius: 14px;
+    border-radius: 0px;
   }
 
   
   /* Saanvi's Portfolio */
   .saanvis-p {
     position: absolute;
-    left: 370px;
-    top: 219px;
+    left: 440px;
+    top: 202px;
     width: 667px;
     height: 84px;
   }
@@ -125,10 +102,9 @@ body {
     margin: 0;
     text-align: left;
   }
-  .saanvis-p .root-0-paragraph-set-0-paragraph-0-text-0 {
-    color: rgba(92, 71, 71, 1);
+  .saanvis-p .root-0-paragraph-set-0-paragraph-0-text-1 {
+    color: rgb(241, 233, 228);
     text-transform: lowercase;
-    
     line-break: auto;
     overflow-wrap: initial;
     white-space: pre;
@@ -137,9 +113,9 @@ body {
     caret-color: rgba(92, 71, 71, 1);
     text-decoration: none;
     letter-spacing: 8px;
-    font-family: "Lato";
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;     
     font-style: normal;
-    font-weight: 400;
   }
 
   /* latin-ext */
@@ -161,39 +137,15 @@ body {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
   
-  /* latin-ext */
-@font-face {
-    font-family: 'Caprasimo';
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url(https://design.penpot.app/internal/gfonts/font/caprasimo/v6/esDT31JQOPuXIUGBp72UnJ8DKpE.woff2) format('woff2');
-    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
-    font-family: 'Caprasimo';
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url(https://design.penpot.app/internal/gfonts/font/caprasimo/v6/esDT31JQOPuXIUGBp72Ukp8D.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-  
-  .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
 
   .rectangle2 {
     position: absolute;
-    left: 72px;
-    top: 500px;
-    width: 1031px;
-    height: 170px;
-    background: #f2e9d68F;
-    border-radius: 14px;
+    left: 40px;
+    top: 430px;
+    width: 1087px;
+    height: 240px;
+    background: #7997598f;
+    border-radius: 0px;
     /* box-shadow: 0px 0px 1ß0px 5px #eff1da88; */
 }
   
@@ -201,15 +153,23 @@ body {
   .about-me {
     position: absolute;
     left: 80px;
-    top: 440px;
+    top: 445px;
     width: 1023px;
     height: 91px;
-    font-family: "Lato";
     color: rgb(61, 50, 50); 
-    line-height: 25px;
-    letter-spacing: 2px;
 
   }
+
+  p,li {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600; 
+    font-size: 17px; 
+    line-height: 25px;
+    letter-spacing: 1.1px;
+    color: #4a3c32;
+
+    }
+
   .about-me .root-0 {
     display: flex;
     white-space: break-spaces;
@@ -230,20 +190,12 @@ body {
     text-align: left;
   }
   .about-me .root-0-paragraph-set-0-paragraph-0-text-0 {
-    color: rgba(92, 71, 71, 1);
-    text-transform: capitalize;
-    
     line-break: auto;
     overflow-wrap: initial;
     white-space: break-spaces;
-    font-size: 50px;
     text-rendering: geometricPrecision;
     caret-color: rgba(92, 71, 71, 1);
-    text-decoration: none;
-    letter-spacing: 8px;
-    font-family: "Caprasimo";
-    font-style: normal;
-    font-weight: 400;
+  
   }
 
   /* Education
@@ -252,8 +204,8 @@ body {
     /* asulogo */
   .asulogo {
     position: absolute;
-    left: 162px;
-    top: 765px;
+    left: 152px;
+    top: 725px;
     width: 154px;
     height: 87px;
     background: url("../img/asulogo.png") no-repeat center center / cover;
@@ -262,12 +214,12 @@ body {
 
    .rectangle3 {
     position: absolute;
-    left: 72px;
-    top: 762px;
-    width: 1389px;
-    height: 91px;
-    background: #ebf2d68f;
-    border-radius: 14px;
+    left: 400px;
+    top: 683px;
+    width: 1068px;
+    height: 181px;
+    background: #9397598f;
+    border-radius: 0px;
     /* box-shadow: 0px 0px 1ß0px 5px #eff1da88; */
 }
 
@@ -278,10 +230,6 @@ body {
     top: 692px;
     width: 1023px;
     height: 91px;
-    font-family: "Lato";
-    color: rgb(61, 50, 50); 
-    line-height: 25px;
-    letter-spacing: 2px;
   }
   .education .root-0 {
     display: flex;
@@ -303,20 +251,11 @@ body {
     text-align: right;
   }
   .education .root-0-paragraph-set-0-paragraph-0-text-0 {
-    color: rgba(92, 71, 71, 1);
-    text-transform: capitalize;
-    
     line-break: auto;
     overflow-wrap: initial;
     white-space: break-spaces;
-    font-size: 50px;
     text-rendering: geometricPrecision;
     caret-color: rgba(92, 71, 71, 1);
-    text-decoration: none;
-    letter-spacing: 8px;
-    font-family: "Caprasimo";
-    font-style: normal;
-    font-weight: 400;
   }
   .education .root-0-paragraph-set-0-paragraph-1 {
     font-size: 0;
@@ -338,8 +277,8 @@ body {
 /* ewhizlogo */
   .ewhizlogo {
     position: absolute;
-    left: 1251px;
-    top: 956px;
+    left: 1271px;
+    top: 926px;
     width: 90px;
     height: 90px;
     background: url("../img/ewhizlogo.png") no-repeat center center / cover;
@@ -349,8 +288,8 @@ body {
   /* mlhlogo */
   .mlhlogo {
     position: absolute;
-    left: 1217px;
-    top: 1090px;
+    left: 1237px;
+    top: 1060px;
     width: 169px;
     height: 72px;
     background: url("../img/mlhlogo.png") no-repeat center center / cover;
@@ -360,8 +299,8 @@ body {
   /* schoollogo */
   .schoollogo {
     position: absolute;
-    left: 1115px;
-    top: 1190px;
+    left: 1150px;
+    top: 1160px;
     width: 380px;
     height: 95px;
     background: url("../img/schoollogo.png") no-repeat center center / cover;
@@ -370,12 +309,12 @@ body {
 
   .rectangle4 {
     position: absolute;
-    left: 72px;
-    top: 950px;
-    width: 1389px;
-    height: 350px;
-    background: #d9f2d68f;
-    border-radius: 14px;
+    left: 40px;
+    top: 878px;
+    width: 1088px;
+    height: 400px;
+    background: #977c598f;
+    border-radius: 0px;
     /* box-shadow: 0px 0px 1ß0px 5px #eff1da88; */
 }
 
@@ -383,13 +322,9 @@ body {
 .work-exper {
   position: absolute;
   left: 80px;
-  top: 880px;
+  top: 890px;
   width: 1023px;
   height: 91px;
-  font-family: "Lato";
-  color: rgb(61, 50, 50); 
-  line-height: 25px;
-  letter-spacing: 2px;
 }
 .work-exper .root-0 {
   
@@ -413,19 +348,174 @@ body {
   text-align: left;
 }
 .work-exper .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(92, 71, 71, 1);
-  text-transform: capitalize;
-  
   line-break: auto;
   overflow-wrap: initial;
   white-space: break-spaces;
-  font-size: 50px;
   text-rendering: geometricPrecision;
   caret-color: rgba(92, 71, 71, 1);
-  text-decoration: none;
-  letter-spacing: 8px;
-  font-family: "Caprasimo";
-  font-style: normal;
-  font-weight: 400;
+
+  
 }
 
+.root-0-paragraph-set-0-paragraph-0-text-0 { 
+  font-family: "Lato";
+  font-weight: 400;   
+  font-style: normal;
+  letter-spacing: 8px;
+  color: rgba(92, 71, 71, 1);
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 40px;
+
+
+}
+
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #f4e9dd;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.hobbies-section {
+  background-color: #f5f1e8; /* soft warm beige */
+  padding: 4rem 2rem;
+}
+
+.hobbies-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.hobby-card {
+  background-color: #fffefc;
+  padding: 2rem;
+  color: #3a2e25; /* deep brown for high contrast on light bg */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.hobby-image {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.hobby-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.hobby-card:hover {
+  transform: scale(1.05);
+}
+
+.map-section {
+  padding: 2rem 1rem;
+  background-color: #3e3027;
+}
+
+.map-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.map-legend {
+  margin-top: 1.5rem;
+  background-color: #4d3c31;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  color: #f4e9dd;
+  text-align: left;
+}
+
+.map-legend h3 {
+  margin-bottom: 0.75rem;
+}
+
+.map-legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.map-legend li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dot-green {
+  background-color: #60b15a;
+}
+
+.dot-red {
+  background-color: #a32150;
+}
+
+
+.hobbies-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #4e3b31;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hobby-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+}
+
+.hobby-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.hobby-content {
+  padding: 1rem;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.hobby-card.painting { background-color: #8DA47E; }       /* sage green */
+.hobby-card.dance { background-color: #D17C5B; }         /* terracotta */
+.hobby-card.fashion { background-color: #BFA5A0; }       /* mauve */
+.hobby-card.music { background-color: #A0B29F; }         /* muted olive */
+.hobby-card.photography { background-color: #8BAAAD; }  /* dusty teal */
