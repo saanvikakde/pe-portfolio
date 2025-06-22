@@ -21,6 +21,36 @@ body {
   text-align: center;
 }
 
+.git {
+  background: url("../img/githubicon.png") no-repeat center center / cover; 
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 22px;
+  left: 20px;
+
+}
+
+.linkedin {
+  background: url("../img/linkedinicon.png")  no-repeat center center / cover; 
+  position: absolute;
+  left: 70px;
+  top: 22px;
+  width: 35px;
+  height: 35px;
+
+}
+
+.email {
+  background: url("../img/emailicon.png") no-repeat center center / cover; 
+  position: absolute;
+  left: 120px;
+  top: 22px;
+  width: 35px;
+  height: 35px;
+}
+
+
 .nav-links {
   display: inline-flex;
   justify-content: center;
@@ -210,20 +240,43 @@ body {
     /* asulogo */
   .asulogo {
     position: absolute;
-    left: 152px;
-    top: 725px;
-    width: 154px;
-    height: 87px;
+    left: 680px;
+    top: 962px;
+    width: 101px;
+    height: 57px;
     background: url("../img/asulogo.png") no-repeat center center / cover;
     border-radius: 0px 0px 0px 0px;
   }
+
+  .ngsc {
+    position: absolute;
+    left: 70px;
+    top: 715px;
+    width: 292px;
+    height: 193px;
+    background: url("../img/ngsc.png") no-repeat center center / cover;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+
+  .grad {
+    position: absolute;
+    left: 1170px;
+    top: 970px;
+    width: 270px;
+    height: 343px;
+    background: url("../img/grad.png") no-repeat center center / cover;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+
 
    .rectangle3 {
     position: absolute;
     left: 400px;
     top: 683px;
     width: 1068px;
-    height: 181px;
+    height: 250px;
     background: #9397598f;
     border-radius: 0px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -285,10 +338,10 @@ body {
 /* ewhizlogo */
   .ewhizlogo {
     position: absolute;
-    left: 1271px;
-    top: 926px;
-    width: 90px;
-    height: 90px;
+    left: 520px;
+    top: 966px;
+    width: 45px;
+    height: 45px;
     background: url("../img/ewhizlogo.png") no-repeat center center / cover;
     border-radius: 0px 0px 0px 0px;
   }
@@ -296,29 +349,20 @@ body {
   /* mlhlogo */
   .mlhlogo {
     position: absolute;
-    left: 1237px;
-    top: 1060px;
-    width: 169px;
-    height: 72px;
+    left: 580px;
+    top: 970px;
+    width: 94px;
+    height: 40px;
     background: url("../img/mlhlogo.png") no-repeat center center / cover;
     border-radius: 0px 0px 0px 0px;
   }
 
-  /* schoollogo */
-  .schoollogo {
-    position: absolute;
-    left: 1150px;
-    top: 1160px;
-    width: 380px;
-    height: 95px;
-    background: url("../img/schoollogo.png") no-repeat center center / cover;
-    border-radius: 0px 0px 0px 0px;
-  }
+
 
   .rectangle4 {
     position: absolute;
     left: 40px;
-    top: 878px;
+    top: 948px;
     width: 1088px;
     height: 400px;
     background: #977c598f;
@@ -332,7 +376,7 @@ body {
 .work-exper {
   position: absolute;
   left: 80px;
-  top: 890px;
+  top: 960px;
   width: 1023px;
   height: 91px;
 }
