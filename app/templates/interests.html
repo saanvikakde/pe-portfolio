@@ -2,12 +2,66 @@
 
 {% block content %}
 
-
-
-<div class="interests-section">
-  <h1>My Interests</h1>
-  <p>I enjoy building tech projects with social impact, participating in hackathons, and exploring AI and data science.</p>
-  <p>Outside of tech, I love writing, hiking, and discovering new music.</p>
+<!-- Hobbies Section -->
+<div class="hobbies-section">
+  <h1 class="map-title">my favorite hobbies</h1>
+  <div class="hobbies-grid">
+    <div class="hobby-card painting">
+      <img src="{{ url_for('static', filename='images/drawing.jpg') }}" class="hobby-image" alt="Painting">
+      <div class="hobby-content">
+        <h3>Painting</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="hobby-card dance">
+      <img src="{{ url_for('static', filename='images/coding.jpg') }}" class="hobby-image" alt="Dance">
+      <div class="hobby-content">
+        <h3>Dance</h3>
+        <p>Placeholder description for dance.</p>
+      </div>
+    </div>
+    <div class="hobby-card fashion">
+      <img src="{{ url_for('static', filename='images/meditation.jpg') }}" class="hobby-image" alt="Fashion">
+      <div class="hobby-content">
+        <h3>Fashion</h3>
+        <p>Placeholder description for fashion.</p>
+      </div>
+    </div>
+    <div class="hobby-card music">
+      <img src="{{ url_for('static', filename='images/reading.jpg') }}" class="hobby-image" alt="Music">
+      <div class="hobby-content">
+        <h3>Music</h3>
+        <p>Placeholder description for music.</p>
+      </div>
+    </div>
+    <div class="hobby-card photography">
+      <img src="{{ url_for('static', filename='images/music.jpg') }}" class="hobby-image" alt="Photography">
+      <div class="hobby-content">
+        <h3>Photography</h3>
+        <p>Placeholder description for photography.</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Favorite Destinations Section -->
+<section class="map-section">
+  <h1 class="section-title">favorite destinations</h1>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/d/u/0/embed?mid=1gLOmih_ugi3BSos0K3JIVdLJsUklEgw&ehbc=2E312F&noprof=1"
+      width="100%" height="480" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
+
+    <div class="map-legend">
+      <h3>📍 Map Key</h3>
+      <ul>
+        <li><span class="dot dot-green"></span> Places I've Been or Lived</li>
+        <li><span class="dot dot-red"></span> Places I Want to Travel To</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
