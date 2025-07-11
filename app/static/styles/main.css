@@ -13,8 +13,8 @@ body {
 
 .menu-bar {
   width: 100%;
-  background-color: rgb(85, 75, 63);
-  padding: 32px 0;
+  background-color: rgb(86, 98, 81);
+  padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -26,7 +26,7 @@ body {
   position: absolute;
   width: 35px;
   height: 35px;
-  top: 22px;
+  top: 11px;
   left: 20px;
 
 }
@@ -35,7 +35,7 @@ body {
   background: url("../img/linkedinicon.png")  no-repeat center center / cover; 
   position: absolute;
   left: 70px;
-  top: 22px;
+  top: 11px;
   width: 35px;
   height: 35px;
 
@@ -45,7 +45,7 @@ body {
   background: url("../img/emailicon.png") no-repeat center center / cover; 
   position: absolute;
   left: 120px;
-  top: 22px;
+  top: 11px;
   width: 35px;
   height: 35px;
 }
@@ -87,12 +87,14 @@ body {
 .rectangle {
     position: absolute;
     left: 0px;
-    top: 80px;
+    top: 60px;
     width: 100%;
-    height: 315px;
+    height: 335px;
     background: #4a3c32;
     border-radius: 0px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* background: url("../img/brownbg.png") no-repeat center center / cover; */
+
   
   }
 
@@ -113,7 +115,7 @@ body {
   .saanvis-p {
     position: absolute;
     left: 440px;
-    top: 202px;
+    top: 190px;
     width: 667px;
     height: 84px;
   }
