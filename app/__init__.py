@@ -5,8 +5,14 @@ from peewee import *
 import datetime
 from playhouse.shortcuts import model_to_dict
 
-load_dotenv()
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
 app = Flask(__name__)
+
+print("✅ LOADING .env VALUES")
+print("MYSQL_DATABASE:", os.getenv("MYSQL_DATABASE"))
+print("MYSQL_USER:", os.getenv("MYSQL_USER"))
+print("MYSQL_PASSWORD:", os.getenv("MYSQL_PASSWORD"))
+print("MYSQL_HOST:", os.getenv("MYSQL_HOST"))
 
 mydb= MySQLDatabase(os.getenv("MYSQL_DATABASE"), 
     user=os.getenv("MYSQL_USER"), 
@@ -25,6 +31,7 @@ class TimelinePost(Model):
     class Meta: 
         database = mydb
     
+
 mydb.connect() 
 mydb.create_tables([TimelinePost])
 
