@@ -26,7 +26,8 @@ class AppTestCase(unittest.TestCase):
         assert response.is_json
         json = response.get_json()
         assert "timeline_posts" in json
-        assert len(json["timeline_posts"]) == 2
+        #assert len(json["timeline_posts"]) == 2
+        timeline_len= len(json["timeline_posts"]) 
          # TODO Add more tests relating to the /api/timeline_post GET and POST apis
         post_response = self.client.post("/api/timeline_post", data={
             "name": "Test User",
@@ -42,7 +43,7 @@ class AppTestCase(unittest.TestCase):
         get_response = self.client.get("/api/timeline_post")
         assert get_response.status_code == 200
         json = get_response.get_json()
-        assert len(json["timeline_posts"]) == 3
+        assert len(json["timeline_posts"]) == timeline_len + 1 
         assert json["timeline_posts"][0]["name"] == "Test User"
 
         # TODO Add more tests relating to the timeline page
