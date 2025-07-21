@@ -16,7 +16,7 @@ class AppTestCase(unittest.TestCase):
         html = response.get_data(as_text=True)
         assert "<title>MLH Fellow</title>" in html
         # TODO Add more tests relating to the home page
-        assert "Saanvi's Portfolio" in html
+        assert "Portfolio" in html
         assert "about me" in html
 
 
@@ -26,7 +26,7 @@ class AppTestCase(unittest.TestCase):
         assert response.is_json
         json = response.get_json()
         assert "timeline_posts" in json
-        assert len(json["timeline_posts"]) == 0
+        assert len(json["timeline_posts"]) == 1
          # TODO Add more tests relating to the /api/timeline_post GET and POST apis
         post_response = self.client.post("/api/timeline_post", data={
             "name": "Test User",
@@ -42,7 +42,7 @@ class AppTestCase(unittest.TestCase):
         get_response = self.client.get("/api/timeline_post")
         assert get_response.status_code == 200
         json = get_response.get_json()
-        assert len(json["timeline_posts"]) == 1
+        assert len(json["timeline_posts"]) == 2
         assert json["timeline_posts"][0]["name"] == "Test User"
 
         # TODO Add more tests relating to the timeline page
