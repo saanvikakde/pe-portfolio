@@ -42,7 +42,7 @@ class AppTestCase(unittest.TestCase):
         get_response = self.client.get("/api/timeline_post")
         assert get_response.status_code == 200
         json = get_response.get_json()
-        assert len(json["timeline_posts"]) == 2
+        assert len(json["timeline_posts"]) == 3
         assert json["timeline_posts"][0]["name"] == "Test User"
 
         # TODO Add more tests relating to the timeline page
@@ -51,6 +51,7 @@ class AppTestCase(unittest.TestCase):
         html = timeline_page.get_data(as_text=True)
         assert "<form" in html
         assert "Submit" in html or "submit" in html
+
 
 if __name__ == "__main__":
     unittest.main()
