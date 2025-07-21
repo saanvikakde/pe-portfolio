@@ -38,3 +38,16 @@ class TestTimelinePost(unittest.TestCase):
         assert second_post.id == 2
 
         # TODO: Get timeline posts and assert that they are correct
+        posts = TimelinePost.select().order_by(TimelinePost.id)
+        self.assertEqual(posts.count(), 2)
+
+        post1 = posts[0]
+        post2 = posts[1]
+
+        self.assertEqual(post1.name, 'John Doe')
+        self.assertEqual(post1.email, 'john@example.com')
+        self.assertEqual(post1.content, "Hello world, I'm John!")
+
+        self.assertEqual(post2.name, 'Jane Doe')
+        self.assertEqual(post2.email, 'jane@example.com')
+        self.assertEqual(post2.content, "Hello world, I'm Jane!")
