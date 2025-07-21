@@ -16,7 +16,8 @@ class AppTestCase(unittest.TestCase):
         html = response.get_data(as_text=True)
         assert "<title>MLH Fellow</title>" in html
         # TODO Add more tests relating to the home page
-        assert "<form" in html  # confirm the form is rendered on the homepage
+        assert "Saanvi's Portfolio" in html
+        assert "about me" in html
 
 
     def test_timeline(self):
