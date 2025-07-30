@@ -35,11 +35,19 @@ mydb.create_tables([TimelinePost])
 
 @app.route('/')
 def index():
-    return render_template('home.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('home.html', title="MLH Fellow", url=os.getenv("URL"), active_page="home")
 
 @app.route('/interests')
 def interests():
-    return render_template('interests.html', title="My Interests", url=os.getenv("URL"))
+    return render_template('interests.html', title="My Interests", url=os.getenv("URL"), active_page="interests")
+
+@app.route('/experience') 
+def experience(): 
+    return render_template('experience.html', title="Experience", url=os.getenv("URL"), active_page="experience")
+
+@app.route('/timeline')
+def timeline(): 
+    return render_template('timeline.html', title="Timeline", active_page="timeline")
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post(): 
@@ -70,6 +78,3 @@ def delete_timeline_post(post_id):
     except TimelinePost.DoesNotExist:
         return {'error': f'Timeline post {post_id} not found'}, 404
 
-@app.route('/timeline')
-def timeline(): 
-    return render_template('timeline.html', title="Timeline")
