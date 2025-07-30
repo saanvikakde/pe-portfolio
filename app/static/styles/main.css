@@ -3,7 +3,7 @@ p, h1, h2, h3, h4, h5, h6, button {
 }
 
 body {
-    background-color: #f3e7da;
+    background-color: #ece4ea;
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
@@ -13,7 +13,7 @@ body {
 
 .menu-bar {
   width: 100%;
-  background-color: rgb(86, 98, 81);
+  background-color: rgb(81, 83, 98);
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -84,30 +84,23 @@ body {
   transform: scaleX(1);
 }
 
+.nav-links a.active {
+  color: #20191e; /* or any color that fits your palette */
+  font-weight: bold;
+}
+
 .rectangle {
     position: absolute;
     left: 0px;
     top: 60px;
     width: 100%;
     height: 335px;
-    background: #4a3c32;
+    background: url("../img/skyline.jpg") no-repeat center center / cover;
     border-radius: 0px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     /* background: url("../img/brownbg.png") no-repeat center center / cover; */
 
   
-  }
-
-
-
-  .pfp {
-    position: absolute;
-    left: 1200px;
-    top: 245px;
-    width: 268px;
-    height: 295px;
-    background: url("../img/logo.jpg") no-repeat center center / cover;
-    border-radius: 0px;
   }
 
   
@@ -173,25 +166,35 @@ body {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
   
+  .pfp {
+    position: absolute;
+    left: 20px;
+    top: 415px;
+    width: 350px;
+    height: 380px;
+    background: url("../img/IMG_8845.jpg") no-repeat center center / cover;
+    border-radius: 20px;
+  }
 
   .rectangle2 {
     position: absolute;
-    left: 40px;
+    left: 390px;
     top: 430px;
-    width: 1087px;
-    height: 240px;
-    background: #7997598f;
-    border-radius: 0px;
+    width: 1100px;
+    height: 355px;
+    background: #6c59978f;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease;
+  
   }
   
   /* about me:  */
   .about-me {
     position: absolute;
-    left: 80px;
-    top: 445px;
+    left: 435px;
+    top: 500px;
     width: 1023px;
     height: 91px;
     color: rgb(61, 50, 50); 
@@ -201,7 +204,7 @@ body {
   p,li {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600; 
-    font-size: 17px; 
+    font-size: 19px; 
     line-height: 25px;
     letter-spacing: 1.1px;
     color: #4a3c32;
@@ -253,7 +256,7 @@ body {
   .ngsc {
     position: absolute;
     left: 70px;
-    top: 715px;
+    top: 460px;
     width: 292px;
     height: 193px;
     background: url("../img/ngsc.png") no-repeat center center / cover;
@@ -275,12 +278,12 @@ body {
 
    .rectangle3 {
     position: absolute;
-    left: 400px;
-    top: 683px;
-    width: 1068px;
-    height: 250px;
-    background: #9397598f;
-    border-radius: 0px;
+    left: 210px;
+    top: 430px;
+    width: 1088px;
+    height: 330px;
+    background: #6859978f;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -289,8 +292,8 @@ body {
    
   .education {
     position: absolute;
-    left: 432px;
-    top: 692px;
+    left: 242px;
+    top: 470px;
     width: 1023px;
     height: 91px;
   }
@@ -311,7 +314,7 @@ body {
     font-size: 0;
     line-height: 1.2;
     margin: 0;
-    text-align: right;
+    text-align: left;
   }
   .education .root-0-paragraph-set-0-paragraph-0-text-0 {
     line-break: auto;
@@ -363,12 +366,12 @@ body {
 
   .rectangle4 {
     position: absolute;
-    left: 40px;
-    top: 948px;
+    left: 210px;
+    top: 818px;
     width: 1088px;
-    height: 400px;
-    background: #977c598f;
-    border-radius: 0px;
+    height: 500px;
+    background: #5968978f;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -377,8 +380,8 @@ body {
 /* Work Experience  */
 .work-exper {
   position: absolute;
-  left: 80px;
-  top: 960px;
+  left: 240px;
+  top: 860px;
   width: 1023px;
   height: 91px;
 }
@@ -432,8 +435,10 @@ body {
   color: #f4e9dd;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 600; 
+  /* font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;  */
+  font-family: "Lato"; 
+  font-weight: 400;
 }
 
 
@@ -441,13 +446,18 @@ body {
   text-align: center;
   font-size: 2.2rem;
   color: #3e3027;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
+  font-family: "Lato"; 
+  font-weight: 400;
 }
 
 .map-section {
   padding: 2rem 1rem;
-  background-color: #3e3027;
+  background-color: #37273e;
+  top : 900px;
+  width: 100%;
+  position: absolute;
 }
 
 .map-container {
@@ -458,7 +468,7 @@ body {
 
 .map-legend {
   margin-top: 1.5rem;
-  background-color: #4d3c31;
+  background-color: #48314d;
   padding: 1rem 2rem;
   border-radius: 12px;
   color: #f4e9dd;
@@ -505,18 +515,25 @@ body {
 .hobbies-section {
   padding: 3rem 2rem;
   text-align: center;
-  background-color: #d4c4af;
+  background-color: #eddbec;
+  top: 395px; 
+  left: 0px; 
+  position: absolute;
+  width: 100%; 
+
 }
 
 .hobbies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 2rem;
+  margin-right: 4rem;
 }
 
 .hobby-card {
   overflow: hidden;
+  border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
@@ -539,8 +556,24 @@ body {
   font-weight: 400;
 }
 
-.hobby-card.painting { background-color: #8DA47E; }       /* sage green */
-.hobby-card.dance { background-color: #D17C5B; }         /* terracotta */
-.hobby-card.fashion { background-color: #BFA5A0; }       /* mauve */
-.hobby-card.music { background-color: #A0B29F; }         /* muted olive */
-.hobby-card.photography { background-color: #8BAAAD; }  /* dusty teal */
+.hobby-card.painting { background-color: #a47e97; }       /* sage green */
+.hobby-card.dance { background-color: #bd909f; }         /* terracotta */
+.hobby-card.fashion { background-color: #aba0bf; }       /* mauve */
+.hobby-card.music { background-color: #9fa8b2; }         /* muted olive */
+.hobby-card.photography { background-color: #8ba6ad; }  /* dusty teal */
+
+.hobby1 {
+    position: absolute;
+    left: 210px;
+    top: 430px;
+    width: 1088px;
+    height: 330px;
+    background: #6859978f;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+

@@ -23,9 +23,10 @@
 
     <div class="menu-bar">
         <nav class="nav-links">
-            <a href="/">Home</a>
-            <a href="/interests">Interests</a>
-            <a href="/timeline">Timeline</a>
+            <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
+            <a href="/experience" class="{% if active_page == 'experience' %}active{% endif %}">Experience</a>
+            <a href="/interests" class="{% if active_page == 'interests' %}active{% endif %}">Interests</a>
+            <a href="/timeline" class="{% if active_page == 'timeline' %}active{% endif %}">Timeline</a>
         </nav>
     
         <!-- Social icons as links -->
