@@ -576,4 +576,7 @@ body {
 }
 
 
-
+.timeline-container h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;       
+}
